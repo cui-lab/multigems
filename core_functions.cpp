@@ -21,10 +21,10 @@ int printhelp(){
     cout << "MultiGeMS 1.0\n";
     cout << "\n";
     cout << "Overview: Multi-sample Genotype Model Selection (MultiGeMS) is a multiple sample\n";
-    cout << "          single nucleotide polymorphism (SNP) caller that works with alignment\n";
-    cout << "          files of high-throughput sequencing (HTS) data. MultiGeMS calls SNPs\n";
-    cout << "          based on a statistical model selection procedure and accounts for\n";
-    cout << "          enzymatic substitution sequencing errors.\n";
+    cout << "          single nucleotide variant (SNV) caller that works with alignment files\n";
+    cout << "          of high-throughput sequencing (HTS) data. MultiGeMS calls SNVs based\n";
+    cout << "          on a statistical model selection procedure and accounts for enzymatic\n";
+    cout << "          substitution sequencing errors.\n";
     cout << "\n";
     cout << "Input:    MultiGeMS accepts a text file, listing on seperate lines, paths of\n";
     cout << "          SAMtools pileup format files. To convert a SAM/BAM alignment file into\n";
@@ -48,7 +48,7 @@ int printhelp(){
     cout << "                   more precise, default is 0.001\n";
     cout << "          -M INT   maximum number of bases to be considered from each sample of\n";
     cout << "                   each site, 0 indicates unbounded, default is 255\n";
-    cout << "          -f FLOAT lFDR SNP threshold, between 0 and 1, default is 0.1\n";
+    cout << "          -f FLOAT lFDR SNV threshold, between 0 and 1, default is 0.1\n";
     cout << "          -C INT   number of sites to be analyzed per analysis cycle, smaller\n";
     cout << "                   is slower in general and uses less RAM, default is 200\n";
     cout << "          -t INT   number of threads, can be used in conjunction with -C option\n";
@@ -56,8 +56,8 @@ int printhelp(){
     cout << "          -n FLOAT site non-reference allele proportion filter (sites where all\n";
     cout << "                   samples have a non-reference proportion less than this filter\n";
     cout << "                   are not analyzed), smaller is slower and more susceptible to\n";
-    cout << "                   false positive SNP calls, higher is faster and more\n";
-    cout << "                   susceptible to false negative SNP calls, between 0 and 1,\n";
+    cout << "                   false positive SNV calls, higher is faster and more\n";
+    cout << "                   susceptible to false negative SNV calls, between 0 and 1,\n";
     cout << "                   default is 0.2\n";
     cout << "          -l FLOAT sample deletion placeholder proportion filter (samples with\n";
     cout << "                   pileup deletion placeholder proportions greater than filter\n";
@@ -66,7 +66,7 @@ int printhelp(){
     cout << "Output:   The MultiGeMS output is similar to that of the Variant Call Format\n";
     cout << "          (VCF) file format. Meta-information lines are provided at the\n";
     cout << "          beginning of each output. Only sites less than the user-selected lFDR\n";
-    cout << "          SNP threshold are output and are considered SNP calls.\n";
+    cout << "          SNV threshold are output and are considered SNV calls.\n";
     cout << "\n";
     cout << "Contact:  Xinping Cui <xinping.cui@ucr.edu>\n";
     cout << "\n";
