@@ -49,7 +49,7 @@ int String_Split(const string &buffer, array<string, 7> &obj, int n);
 int calculate_values(double end);
 int calculate_values(double end, int thread);
 int new_read(ifstream &in, queue<string> &buffer, int len);
-long min_last_element(vector<queue<string>> &buffer_queue);
+int min_last_element(vector<queue<string>> &buffer_queue);
 void data_checkin(queue<string> &buffer, vector<unsigned int> &count_vector, long checkin_limit, int sample);
 unsigned int position_reduce();
 void output_values(ofstream &out);
