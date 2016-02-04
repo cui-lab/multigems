@@ -193,8 +193,7 @@ void output_header(ofstream &out)
 	out << "##phasing=partial" << endl;
 	out << "##INFO=<ID=NA,Number=NA,Type=NA,Description=\"INFO is not applicable in this version.\"" << endl;
 	out << "##FILTER=<ID=q10,Description=\"Quality below 10\"" << endl;
-	out << "#CHROM" << "\t" << "POS" << "\t" << "ID" << "\t" << "REF" << "\t" << "ALT" << "\t"
-	    << "QUAL" << "\t" << "FILTER" << "\t" << "INFO" << endl;
+	out << "#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tSample_Number\tMu_0\tMu_1\tRR\tRN\tNN\tlFDR" << endl;
 }
 
 void core_calculate(ifstream* ifstream_array, vector<queue<string>> &buffer_queue, ofstream &output_file)
