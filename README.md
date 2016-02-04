@@ -70,7 +70,9 @@ multigems -i pileuplist.txt -o multigems.out [OPTIONS]
 The MultiGeMS output is similar to that of the Variant Call Format (VCF) file 
 format. Meta-information lines are provided at the beginning of each output. 
 Only sites less than the user-selected lFDR SNV threshold are output and are 
-considered SNV calls.
+considered SNV calls. An lFDR output of "-1" indicates that the site was
+analyzed by MultiGeMS, but not enough information was retained post-filtering
+to estimate the lFDR value for the site.
 
 ##Contact
 
