@@ -25,8 +25,8 @@ format, users can use the SAMtools mpileup procedure with option -s.
 Alignment file reads with undesirable characteristics can be filtered before 
 running MultiGeMS. For an explanation why filtering may be desirable and for a 
 brief tutorial on how to filter SAM/BAM alignment files using SAMtools view, 
-please see the PDF document entitled "Pre-Filtering Alignment Files" available 
-at https://github.com/cui-lab/multigems.
+please see the PDF document entitled "Filtering Alignment Files" available at 
+https://github.com/cui-lab/multigems.
 
 ##Usage
 
